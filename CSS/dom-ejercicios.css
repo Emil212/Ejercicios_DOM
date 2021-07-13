@@ -62,7 +62,92 @@ img{
 }
 
 
+.panel{
+    position: fixed;
+    z-index: 998;/*Abajo del boton*/
+    width: 100%;
+    background-color: var(--second-modal-color); 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*Opacidad en la que se inicia*/
+    /*Opacity solo quita el menu de la vista pero la intercatividad sigue ahi*/
+    opacity: 0;
+    /*Con visibility: hidden quitamos la intercatividad del menu*/
+    visibility: hidden; 
+    transition:transform 0.3s ease, opacity 0.5s ease;
+    /*Posicion en la que se inicia*/
+    /*De arriba*/
+    /* transform: translate(0, -100%); */
+    /*De abajo*/ 
+    /* transform: translate(0,100%);  */
+    /*Izquierda*/
+    /* transform: translate(-100,0);  */
+}
+
+.panel.is-active{
+    /*Posicion a la quq vamos a llegar*/
+    /* transform: translate(0,0); */
+    /*Opacidad a la que vamos a llegar*/
+    visibility: visible;
+    opacity: 1;
+    /*Se puede jugar con la opacidad y las transiciones para crear efectos*/ 
+}
+
+.panel-btn{
+    position: fixed;
+    z-index: 1000;
+    bottom: 1vh;
+    right:1vw;
+    width: 4rem;
+    height:4rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.menu{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.menu a{
+    padding: 2rem;
+    width:inherit;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: all 0.5 ease;
+}
+ 
+.menu a:hover{
+    font-weight: bold;
+    color:var(--second-color);
+    background-color: var(--main-modal-color);
+}
 
 
+/************Eventos del teclado*****************/
 
+.stage{
+    display: flex;
+    min-height: 50vh;
+    background-color:var(--second-color);    
+}
+
+.ball{
+    margin: auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
 

@@ -5,34 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios del DOM</title>
-    <link rel="stylesheet" href="./CSS/dom-ejercicios.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <link rel="stylesheet" href="./CSS/dom-ejercicios.css">
+
 </head>
 <body>
     <header class="header">
         <h1>Ejercicios del DOM</h1>
     </header>
-    <button class="hamburger hamburger--collapse" type="button">
+    <button class="panel-btn hamburger hamburger--vortex" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
     </button>
     <aside class="panel">    
         <nav class="menu"> 
-            <a href="#seccion1">Seccion 1</a>
-            <a href="#seccion2">Seccion 2</a>
+            <a href="#seccion1">Reloj digital y alarma</a>
+            <a href="#seccion2">Eventos del teclado</a>
             <a href="#seccion3">Seccion 3</a>
             <a href="#seccion4">Seccion 4</a>
-            <a href="#seccion5">Seccion 5</a>
+            <a href="#seccion5">Seccion 5</a> 
         </nav>
     </aside>
 
     <main>
-        <section id="seccion1" class="section">Seccion 1</section>
-        <section id="seccion2" class="section">Seccion 2</section>
-        <section id="seccion3" class="section">Seccion 3</section>
-        <section id="seccion4" class="section">Seccion 4</section>
-        <section id="seccion5" class="section">Seccion 5</section>
+        <section id="seccion1" class="section">
+            <h2>Reloj digital y alarma</h2>
+            <div id="reloj"></div>
+            <div>
+                <button id="activar-reloj">Iniciar Reloj</button>
+                <button id="desactivar-reloj">Detener Reloj</button>
+                <button id="activar-alarma">Iniciar Alarma</button>
+                <button id="desactivar-alarma">Detener Alarma</button>
+            </div>
+        </section>
+        <section id="seccion2" class="section">
+            <h2>Eventos del teclado</h2>
+            <article class="stage">
+                <div class="ball"></div>
+            </article>
+        </section>
+        <section id="seccion3" class="section">
+            <h2>Seccion 3</h2>
+        </section>
+        <section id="seccion4" class="section">
+            <h2>Seccion 4</h2>
+        </section>
+        <section id="seccion5" class="section">
+            <h2>Seccion 5</h2>
+        </section>
     </main>
 
     <script src="/JS/index_dom.js" type="module"></script>
