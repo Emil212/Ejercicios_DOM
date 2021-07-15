@@ -10,36 +10,46 @@ export function moveBall(e, ball, stage) {
   const $stage = d.querySelector(stage);
   const limitsBall = $ball.getBoundingClientRect();
   const limitsStage = $stage.getBoundingClientRect();
-  console.log(e.keyCode);
-  console.log(e.key);
-  console.log(limitsStage);
-  console.log(limitsBall);
+  // console.log(e.keyCode);
+  // console.log(e.key);
+  // console.log(limitsStage);
+  // console.log(limitsBall);
 
   switch (e.keyCode) {
     case 37:
       //move("left");
-      e.preventDefault();
-      x--;
 
+      //Sirve para comparar sus posiciones y que no se vaya a salir la bola del escenario
+      if (limitsBall.left > limitsStage.left) {
+        e.preventDefault();
+        x--;
+      }
       break;
 
     case 38:
       //move("up");
-      e.preventDefault();
-      y--;
-      //En la web la y negativa es havia arriba
+
+      if (limitsBall.top > limitsStage.top) {
+        //En la web la y negativa es hacia arriba
+        e.preventDefault();
+        y--;
+      }
       break;
 
     case 39:
-      //move("right");
-      e.preventDefault();
-      x++;
+      if (limitsBall.right < limitsStage.right) {
+        //move("right");
+        e.preventDefault();
+        x++;
+      }
       break;
 
     case 40:
-      //move("down");
-      e.preventDefault();
-      y++;
+      if (limitsBall.bottom < limitsStage.bottom) {
+        //move("down");
+        e.preventDefault();
+        y++;
+      }
       break;
   }
   $ball.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
