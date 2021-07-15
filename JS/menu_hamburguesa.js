@@ -5,7 +5,7 @@ export default function hamburgerMenu(panelBtn, panel, menuLink) {
 
   d.addEventListener("click", (e) => {
     if (e.target.matches(panelBtn) || e.target.matches(`${panelBtn} *`)) {
-      /*Desencadena el evento el panelBtn, osea .panel-btn y cualquiera de sus hijos, eso significa el */
+      /*Desencadena el evento el panelBtn, osea .panel-btn  y cualquiera de sus hijos, eso significa el */
       d.querySelector(panel).classList.toggle("is-active"); /*Selector panel */
       d.querySelector(panelBtn).classList.toggle("is-active");
       /*Lo que tengamos en la variable panelBtn, de esta forma se hace la animacion de la X, esto  ya viene por defecto en la documentacion de la libreria */
