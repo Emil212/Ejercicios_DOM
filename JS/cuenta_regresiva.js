@@ -20,7 +20,7 @@ export default function countdown(id, limitDate, finalMessage) {
         "0" + Math.floor((limitTime % (1000 * 60 * 60)) / (1000 * 60))
       ).slice(-2),
       seconds = ("0" + Math.floor((limitTime % (1000 * 60)) / 1000)).slice(-2);
-    $countdown.innerHTML = `<h3>Faltan: ${days} dias ${hours} horas ${minutes} minutos ${seconds} para tu proximo cumpleaños </h3>`;
+    $countdown.innerHTML = `<h3>Faltan: ${days} dias ${hours} horas ${minutes} minutos ${seconds} segundos para tu proximo cumpleaños </h3>`;
 
     if (limitTime < 0) {
       clearInterval(countdownTempo);

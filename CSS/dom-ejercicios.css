@@ -36,7 +36,7 @@ img {
 /***************menu-hamburguesa*****************/
 
 .header {
-  position: sticky;
+  position: sticky; /*Hace que se quede fijo*/
   top: 0;
   padding: 1rem;
   background-color: var(--main-color);
@@ -177,4 +177,34 @@ img {
 .hidden {
   visibility: hidden;
   opacity: 0;
+}
+
+/********* DarkTheme Button******/
+
+.dark-theme-btn {
+  position: fixed;
+  z-index: 1000;
+  bottom: 1vh;
+  left: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: var(--main-color);
+  color: var(--second-color);
+  outline: 0; /*Quita la linea negra de afuera*/
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.dark-theme-btn:hover {
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
+
+.dark-mode {
+  background-color: var(--second-color);
+  color: var(--main-color);
 }
