@@ -40,6 +40,7 @@ export default function darkTheme(btn, classDark) {
 
   //Dentro de la funcion que se va a importar no podemos tener un evento del mismo tipo que en a funcion principal
   //Por ejemplo, en este caso no se puede tener un DOMContentLoaded ya que ese evento ya existe en la funcion index.js
+  //Debido a ello se mueve la funcion del archivo index afuera del DOMContentLoaded
 
   d.addEventListener("DOMContentLoaded", (e) => {
     //Se le pasa por parametro el nombre de la varibale y su valor

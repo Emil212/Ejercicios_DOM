@@ -5,6 +5,7 @@ import countdown from "./cuenta_regresiva.js";
 import scrollTopButton from "./boton_scroll.js";
 import darkTheme from "./tema_oscuro.js";
 import responsiveMedia from "./objeto_responsive.js";
+import responsiveTester from "./prueba_responsive.js";
 
 const d = document;
 
@@ -21,7 +22,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   responsiveMedia(
     "youtube",
     "(min-width:1024px)",
-    `<a href="https://www.youtube.com/watch?v=pT_Y3O9czww" target="_blank" rel="noopener">Ver video</a>`,
+    `<a href="https://www.youtube.com/watch?v=pT_Y3O9czww-" target="_blank" rel="noopener">Ver video</a>`,
     `<iframe width="560" height="315" src="https://www.youtube.com/embed/pT_Y3O9czww?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
   );
 
@@ -31,6 +32,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
     `<a href="https://goo.gl/maps/JrFkLfAr4p7J6VTd8" target="_blank" rel="noopener">Ver mapa</a>`,
     `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.9934142925254!2d-99.13758508565617!3d19.498919143610664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9b3e9aa18eb%3A0x33b56a6d5f94b47a!2sESIME%20Zacatenco!5e0!3m2!1ses-419!2smx!4v1626432731531!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`
   );
+
+  responsiveTester("responsive-tester");
 });
 
 //No se incluye en el DOMContentLoaded deido a que no muestra nada
