@@ -7,6 +7,7 @@ import darkTheme from "./tema_oscuro.js";
 import responsiveMedia from "./objeto_responsive.js";
 import responsiveTester from "./prueba_responsive.js";
 import userDeviceInfo from "./deteccion_dispositivos.js";
+import networkStatus from "./deteccion_red.js";
 
 const d = document;
 
@@ -46,3 +47,5 @@ d.addEventListener("keydown", (e) => {
 
 //Sacando la funcionnde aqui ya no se va a cancelar
 darkTheme(".dark-theme-btn", "dark-mode");
+
+networkStatus();
