@@ -232,3 +232,37 @@ img {
 .offline {
   background-color: #b71c1c;
 }
+
+/************** Search Filters *************/
+
+.cards {
+  display: grid;
+  /*Al poner auto-fit se indica que se ajustara a la cantidad de columnas que tengammos*/
+  /*minmx-> Permite oscilar entre el tamaño de la cuadricula entre un valor minimo (250px) y maximo(1fr)*/
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background-color: var(--second-color);
+  color: var(--main-color);
+  transition: all 0.3s ease-out;
+}
+
+.card img {
+  width: 100;
+  height: auto; /*Altura automatica*/
+}
+
+/*figcaption se usa para poner subtitulos o una leyenda al contenido de un elemento cuyo atributo padre es una figure */
+.card figcaption {
+  padding: 1rem;
+}
+
+.filter {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
+  /*Todos los elementos tienen por defecto un order 0
+  al ponerle un order 1 hace que se queden al final*/
+}

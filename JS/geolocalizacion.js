@@ -32,7 +32,6 @@ export default function getGeolocation(id) {
       "afterbegin",
       `<p><mark>Error ${err.code}: ${err.message}</mark></p>`
     );
-    console.log(err);
   };
 
   //Este metodo necesita tres parametros, en caso de exito,fracaso y opciones

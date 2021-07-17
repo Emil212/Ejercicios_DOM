@@ -10,6 +10,7 @@ import userDeviceInfo from "./deteccion_dispositivos.js";
 import networkStatus from "./deteccion_red.js";
 import webCam from "./deteccion_webcam.js";
 import getGeolocation from "./geolocalizacion.js";
+import searchFilters from "./filtro_busquedas.js";
 
 const d = document;
 
@@ -41,6 +42,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
   userDeviceInfo("user-device");
   webCam("webcam");
   getGeolocation("geolocation");
+  searchFilters(".card-filter", ".card");
+  //Cuando usamos el querySelector con clases aqui si es necesario poner el punto
 });
 
 //No se incluye en el DOMContentLoaded deido a que no muestra nada
