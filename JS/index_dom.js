@@ -11,6 +11,7 @@ import networkStatus from "./deteccion_red.js";
 import webCam from "./deteccion_webcam.js";
 import getGeolocation from "./geolocalizacion.js";
 import searchFilters from "./filtro_busquedas.js";
+import draw from "./sorteo.js";
 
 const d = document;
 
@@ -44,6 +45,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
   getGeolocation("geolocation");
   searchFilters(".card-filter", ".card");
   //Cuando usamos el querySelector con clases aqui si es necesario poner el punto
+  //En esta funcion se usaron id por eso ss pone el #
+  //Necesitamos el btn y sobre el que vamos a estar iterando, osea cada uno de los player
+  draw("#winner-btn", ".player");
 });
 
 //No se incluye en el DOMContentLoaded deido a que no muestra nada
