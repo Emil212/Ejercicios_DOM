@@ -66,10 +66,15 @@ img {
   z-index: 998; /*Abajo del boton*/
   width: 100%;
   background-color: var(--second-modal-color);
+  /*Para que se ajuste a toda la pantalla*/
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  /*Saber que hacer con el contenido que se desborada
+  De esta forma tendra su propia barra de navegacion*/
+  overflow-y: auto;
+
   /*Opacidad en la que se inicia*/
   /*Opacity solo quita el menu de la vista pero la intercatividad sigue ahi*/
   opacity: 0;
