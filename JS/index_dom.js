@@ -14,6 +14,7 @@ import searchFilters from "./filtro_busquedas.js";
 import draw from "./sorteo.js";
 import slider from "./carrucel.js";
 import scrollSpy from "./scroll_spy.js";
+import smartVideo from "./video_inteligente.js";
 
 const d = document;
 
@@ -52,6 +53,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   draw("#winner-btn", ".player");
   slider();
   scrollSpy();
+  smartVideo();
 });
 
 //No se incluye en el DOMContentLoaded deido a que no muestra nada

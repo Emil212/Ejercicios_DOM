@@ -394,3 +394,10 @@ slider a:hover {
     left: 5rem;
   }
 }
+
+/**************Video*******************/
+
+.section video {
+  width: inherit;
+  height: inherit;
+}
