@@ -13,6 +13,7 @@ import getGeolocation from "./geolocalizacion.js";
 import searchFilters from "./filtro_busquedas.js";
 import draw from "./sorteo.js";
 import slider from "./carrucel.js";
+import scrollSpy from "./scroll_spy.js";
 
 const d = document;
 
@@ -50,6 +51,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   //Necesitamos el btn y sobre el que vamos a estar iterando, osea cada uno de los player
   draw("#winner-btn", ".player");
   slider();
+  scrollSpy();
 });
 
 //No se incluye en el DOMContentLoaded deido a que no muestra nada
