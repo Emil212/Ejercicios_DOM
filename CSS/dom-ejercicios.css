@@ -471,7 +471,7 @@ slider a:hover {
   border: 1.5px solid var(--form-error-color);
 }
 
-.contact-from-error {
+.contact-form-error {
   margin-top: -1rem;
   font-size: 80%;
   background-color: var(--form-error-color);
@@ -481,7 +481,7 @@ slider a:hover {
 
 .contact-form-error.is-active {
   display: block;
-  animation: show-message 1s normal 0s ease-out both;
+  animation: show-message 1s 1 normal 0s ease-out both;
 }
 
 .none {

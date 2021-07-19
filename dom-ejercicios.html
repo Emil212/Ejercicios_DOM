@@ -199,7 +199,7 @@
             name="name"
             placeholder="Escribe tu nombre"
             title="Nombre solo acepta letras y espacios en blanco"
-            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$"
             required
           />
 
@@ -208,7 +208,7 @@
             name="email"
             placeholder="Escribe tu correo"
             title="Email incorrecto"
-            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+            pattern="^[A-Za-z0-9]+(\.[A-Za-z0-9]+|-[A-Za-z0-9]+|_[A-Za-z0-9]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,20})$"
             required
           />
 
@@ -216,7 +216,7 @@
             type="text"
             name="subject"
             placeholder="Asunto a tratar"
-            tittle="El asunto es requerido"
+            title="El asunto es requerido"
             required
           />
           <textarea
@@ -224,7 +224,7 @@
             cols="50"
             rows="5"
             placeholder="Escribe tus comentarios"
-            data-pattern="^.{1,255}$"
+            data-pattern="^(\n|.){1,255}$"
             title="Tu comentario no debe de exceder los 255 caracteres"
             required
           ></textarea>

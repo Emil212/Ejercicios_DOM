@@ -15,6 +15,7 @@ import draw from "./sorteo.js";
 import slider from "./carrucel.js";
 import scrollSpy from "./scroll_spy.js";
 import smartVideo from "./video_inteligente.js";
+import contactFormValidations from "./validaciones_formulario.js";
 
 const d = document;
 
@@ -54,6 +55,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   slider();
   scrollSpy();
   smartVideo();
+  contactFormValidations();
 });
 
 //No se incluye en el DOMContentLoaded deido a que no muestra nada
